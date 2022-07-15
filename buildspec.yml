@@ -1,3 +1,4 @@
+# for use by AWS CodeBuild service
 version: 0.2
 
 env:
