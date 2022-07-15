@@ -46,6 +46,9 @@ function create_build_env() {
     pip install -r requirements.txt
     loginfo "Activated venv"
 
+    # Install 'nc' for AWS CodeBuild image aws/codebuild/amazonlinux2-x86_64-standard:4.0
+    yum install -y nc
+
 }
 
 function kill_local_pypi_server_if_exists() {
