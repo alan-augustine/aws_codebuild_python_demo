@@ -23,3 +23,7 @@ phases:
     on-failure: CONTINUE   
     commands:
       - echo Execution completed on `date`
+  artifacts:
+    files:
+      - 'singly_linkedlist-0.0.1-py3-none-any.whl'
+      - 'singly-linkedlist-0.0.1.tar.gz'
