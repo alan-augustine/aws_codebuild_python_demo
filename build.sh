@@ -27,7 +27,8 @@ function cleanup_directories() {
     set +e
     [[ -d ./pypi_packages ]] && rm -Rf ./pypi_packages
     [[ -d build ]] && rm -Rf build
-    [[ -d dist ]] && rm -Rf dist
+    # do not remove - to be uploaded to S3
+    # [[ -d dist ]] && rm -Rf dist
     [[ -d src/singly_linkedlist.egg-info ]] && rm -Rf src/*.egg-info
     [[ -f log_pypi_server.log ]] && rm -f log_pypi_server.log
     set -e
