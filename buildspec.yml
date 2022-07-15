@@ -7,7 +7,7 @@ env:
 phases:
   install:
     runtime-versions:
-      python: 3.7
+      python: 3.9
     on-failure: ABORT       
     commands:
       - echo "Install Phase - $(which python3)"
@@ -22,4 +22,4 @@ phases:
   post_build:
     on-failure: CONTINUE   
     commands:
-      - echo terraform execution completed on `date`      
+      - echo terraform execution completed on `date`
