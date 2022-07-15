@@ -14,7 +14,7 @@ phases:
   pre_build:
     on-failure: ABORT     
     commands:
-      - echo terraform execution started on `date`            
+      - echo Execution started on `date`
   build:
     on-failure: ABORT   
     commands:
@@ -22,4 +22,4 @@ phases:
   post_build:
     on-failure: CONTINUE   
     commands:
-      - echo terraform execution completed on `date`
+      - echo Execution completed on `date`
